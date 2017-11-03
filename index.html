@@ -40,6 +40,13 @@
       });
       osm.addTo(mapa);
       
+	    
+    var wmsLayer = L.tileLayer.wms('http://geos.snitcr.go.cr/be/IGN_5/wms?', {
+    layers: 'limiteprovincial_5K'
+}).addTo(mapa);	    
+	    
+	    
+	    
    
       // retorna un color con base en la cantidad de pobladores
       function color(d) {
